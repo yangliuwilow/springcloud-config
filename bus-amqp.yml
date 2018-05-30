@@ -39,5 +39,5 @@ spring:
 eureka:
   client: 
     service-url:
-       defaultZone: http://springCloudEureka7001.com:7001/eureka/test
+       defaultZone: http://springCloudEureka7001.com:7001/eureka/
   
