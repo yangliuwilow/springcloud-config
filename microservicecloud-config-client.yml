@@ -6,7 +6,7 @@ spring:
 ---
 server: 
   port: 8201
-context:   config/refresh配置  
+context:   config/refresh配置123  
 spring:
    profiles: dev  #开发环境
    application: 
