@@ -1,0 +1,43 @@
+spring: 
+   profiles: 
+     active: 
+     - dev
+
+---
+server: 
+  port: 6002
+context:   config/refresh配置123  
+spring:
+   profiles: dev  #开发环境
+   application: 
+     name: microservicecloud-config-client-bus
+   rabbitmq:
+      host: 192.168.0.51
+      port: 5672
+      username: admin
+      password: linjia
+eureka:
+  client: 
+    service-url:
+       defaultZone: http://springCloudEureka7001.com:7001/eureka/
+      
+     
+---
+server: 
+  port: 6001
+  
+spring:
+   profiles: test  #测试环境
+   application: 
+     name: microservicecloud-config-client-bus
+   rabbitmq:
+      host: 192.168.0.51
+      port: 5672
+      username: admin
+      password: linjia
+       
+eureka:
+  client: 
+    service-url:
+       defaultZone: http://springCloudEureka7001.com:7001/eureka/test
+  
