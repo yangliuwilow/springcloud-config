@@ -1,6 +1,6 @@
 server:
   port: 8002
-
+context: abc update
 mybatis:
   type-aliases-package: com.linjia.springcloud.entity          # 所有Entity别名类所在包
   mapper-locations:
